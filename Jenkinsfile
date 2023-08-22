@@ -19,7 +19,7 @@ stage('Continuous Deployment')
 
 {
 
-sh 'scp  /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war   ubuntu@172.31.44.187:/var/lib/tomcat9/webapps/qaenv.war'
+sh 'scp  /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war   ubuntu@172.31.44.254:/var/lib/tomcat9/webapps/qaenv.war'
 
 }
 
