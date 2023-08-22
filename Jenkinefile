@@ -1,0 +1,19 @@
+node('built-in') 
+ {
+ stage('continuous download_loans') 
+   {
+    
+     git branch: 'main', url: 'https://github.com/ankitnarula28/awsmaven.git'
+ 
+     }   
+
+stage('Continuous build_loans') 
+
+{
+
+sh 'mvn package'
+
+}
+
+
+}
